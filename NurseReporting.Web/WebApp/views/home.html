@@ -1,0 +1,7 @@
+﻿<div>
+    <button class="btn btn-default" ng-click="home.open()">Open me!</button>
+    <button class="btn btn-default" ng-click="home.open('lg')">Large modal</button>
+    <button class="btn btn-default" ng-click="home.open('sm')">Small modal</button>
+    <button class="btn btn-default" ng-click="home.toggleAnimation()">Toggle Animation ({{ home.animationsEnabled }})</button>
+    <div ng-show="selected">Selection from a modal: {{ home.selected }}</div>
+</div>

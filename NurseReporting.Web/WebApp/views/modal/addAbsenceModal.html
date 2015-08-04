@@ -1,0 +1,27 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Ajouter une absence</h3>
+</div>
+<div class="modal-body">
+    <li ng-show="modal.hasError" style="color: red;">An error occured while trying to save.</li>
+    <br/>
+    <form name="absenceForm">
+        <div class="form-group">
+            <label for="dateAbsence">Date d'absence</label>
+            <input id="dateAbsence" class="form-control" type="date" ng-model="modal.absence.Date" />
+        </div>
+        <div class="form-group">
+            <label for="raisonAbsence">Raison</label>
+            <select class="form-control" ng-model="modal.absence.Reason"
+                    ng-options="raison as raison.Label for raison in modal.raisons">
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="commentaireAbsence">Commentaire</label>
+            <textarea id="commentaireAbsence" class="form-control" ng-model="modal.absence.Comment" />
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="modal.ok()">OK</button>
+    <button class="btn btn-warning" ng-click="modal.cancel()">Annuler</button>
+</div>

@@ -1,0 +1,29 @@
+﻿<div>
+    <button class="btn btn-default" ng-click="daily.addDailyObservationCard()">Fiche d'observation</button>    
+
+    <br/><br/>
+
+    <div>
+        <table class="table table-bordered table-hover" >
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Date</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="child in daily.children">
+                    <td>{{$index+1}}</td>
+                    <td>{{child.LastName}}</td>
+                    <td>{{child.FirstName}}</td>
+                    <td>{{child.birthdate}}</td>
+                    <td>{{child.startDate}}</td>
+                    <td>{{child.endDate}}</td>
+                    <td><a>Editer</a> <a>Supprimer</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

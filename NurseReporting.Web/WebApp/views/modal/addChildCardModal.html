@@ -1,0 +1,36 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Enfant</h3>
+</div>
+<div class="modal-body">
+   <form>
+       <div class="form-group">
+           <label for="firstName">Prénom</label>
+           <input type="text" class="form-control" id="firstName" ng-model="childModal.child.FirstName"/>
+       </div>
+       <div class="form-group">
+           <label for="lastName">Nom</label>
+           <input type="text" class="form-control" id="lastName" ng-model="childModal.child.LastName"/>
+       </div>
+       <div class="form-group">
+           <label for="birthdate">Date de naissance</label>
+           <input type="date" class="form-control" ng-model="childModal.child.BirthDate" />
+       </div>
+       <div class="form-group">
+           <label for="startDate">Début</label>
+           <input type="date" class="form-control" ng-model="childModal.child.StartDate"/>
+       </div>
+       <div class="form-group">
+           <label for="endDate">Fin</label>
+           <input type="date" class="form-control" ng-model="childModal.child.EndDate"/>
+       </div>
+       <div class="form-group">
+           <label for="estimatedEndDate">Fin estimée</label>
+           <input type="date" class="form-control" ng-model="childModal.child.EstimatedEndDate"/>
+       </div>
+   </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="childModal.ok()">OK</button>
+    <button class="btn btn-warning" ng-click="childModal.cancel()">Annuler</button>
+</div>
+

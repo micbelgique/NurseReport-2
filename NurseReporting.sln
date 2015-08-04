@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurseReporting.Models", "NurseReporting.Models\NurseReporting.Models.csproj", "{F48AAB28-4E24-4A3B-AA49-34C02505FA09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurseReporting.Interfaces", "NurseReporting.Interfaces\NurseReporting.Interfaces.csproj", "{68F62853-CEFB-46D2-BFBD-4109F0833765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurseReporting.ViewModels", "NurseReporting.ViewModels\NurseReporting.ViewModels.csproj", "{347AC4AC-E343-4F68-811C-6D5C753165F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{9F79B3CC-431D-43E7-A449-347C0952A0B8}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\NurseReport.pdf = Documents\NurseReport.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{06167E11-CC02-4910-9BBC-BB0CBDF2182F}"
+	ProjectSection(SolutionItems) = preProject
+		Prototype\AdministratorDashBoard.bmml = Prototype\AdministratorDashBoard.bmml
+		Prototype\AdministratorDashBoard.png = Prototype\AdministratorDashBoard.png
+		Prototype\Admission.bmml = Prototype\Admission.bmml
+		Prototype\Admission.png = Prototype\Admission.png
+		Prototype\AgendaParent.bmml = Prototype\AgendaParent.bmml
+		Prototype\AgendaParent.png = Prototype\AgendaParent.png
+		Prototype\ChildCard.bmml = Prototype\ChildCard.bmml
+		Prototype\ChildCard.png = Prototype\ChildCard.png
+		Prototype\CommonControl.bmml = Prototype\CommonControl.bmml
+		Prototype\CommonControl.png = Prototype\CommonControl.png
+		Prototype\Contact.bmml = Prototype\Contact.bmml
+		Prototype\Contact.png = Prototype\Contact.png
+		Prototype\DailyObservationCard.bmml = Prototype\DailyObservationCard.bmml
+		Prototype\DailyObservationCard.png = Prototype\DailyObservationCard.png
+		Prototype\EmployeDashBoard.bmml = Prototype\EmployeDashBoard.bmml
+		Prototype\EmployeDashBoard.png = Prototype\EmployeDashBoard.png
+		Prototype\Login.bmml = Prototype\Login.bmml
+		Prototype\Login.png = Prototype\Login.png
+		Prototype\ParentDashboard.bmml = Prototype\ParentDashboard.bmml
+		Prototype\ParentDashboard.png = Prototype\ParentDashboard.png
+		Prototype\Unforeseen.bmml = Prototype\Unforeseen.bmml
+		Prototype\Unforeseen.png = Prototype\Unforeseen.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurseReporting.Web", "NurseReporting.Web\NurseReporting.Web.csproj", "{3376D127-0B76-469F-AD8C-620940BACCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurseReporting.DataAccess", "NurseReporting.DataAccess\NurseReporting.DataAccess.csproj", "{0F879453-4221-488E-8B79-64B454B34129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F48AAB28-4E24-4A3B-AA49-34C02505FA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48AAB28-4E24-4A3B-AA49-34C02505FA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48AAB28-4E24-4A3B-AA49-34C02505FA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48AAB28-4E24-4A3B-AA49-34C02505FA09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F62853-CEFB-46D2-BFBD-4109F0833765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F62853-CEFB-46D2-BFBD-4109F0833765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F62853-CEFB-46D2-BFBD-4109F0833765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F62853-CEFB-46D2-BFBD-4109F0833765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347AC4AC-E343-4F68-811C-6D5C753165F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347AC4AC-E343-4F68-811C-6D5C753165F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347AC4AC-E343-4F68-811C-6D5C753165F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347AC4AC-E343-4F68-811C-6D5C753165F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3376D127-0B76-469F-AD8C-620940BACCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3376D127-0B76-469F-AD8C-620940BACCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3376D127-0B76-469F-AD8C-620940BACCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3376D127-0B76-469F-AD8C-620940BACCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F879453-4221-488E-8B79-64B454B34129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F879453-4221-488E-8B79-64B454B34129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F879453-4221-488E-8B79-64B454B34129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F879453-4221-488E-8B79-64B454B34129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://yvescotton.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NurseReporting.Models\\NurseReporting.Models.csproj
+		SccProjectName1 = NurseReporting.Models
+		SccLocalPath1 = NurseReporting.Models
+		SccProjectUniqueName2 = NurseReporting.Interfaces\\NurseReporting.Interfaces.csproj
+		SccProjectName2 = NurseReporting.Interfaces
+		SccLocalPath2 = NurseReporting.Interfaces
+		SccProjectUniqueName3 = NurseReporting.ViewModels\\NurseReporting.ViewModels.csproj
+		SccProjectName3 = NurseReporting.ViewModels
+		SccLocalPath3 = NurseReporting.ViewModels
+		SccProjectUniqueName4 = NurseReporting.Web\\NurseReporting.Web.csproj
+		SccProjectName4 = NurseReporting.Web
+		SccLocalPath4 = NurseReporting.Web
+		SccProjectUniqueName5 = NurseReporting.DataAccess\\NurseReporting.DataAccess.csproj
+		SccProjectName5 = NurseReporting.DataAccess
+		SccLocalPath5 = NurseReporting.DataAccess
+	EndGlobalSection
+EndGlobal

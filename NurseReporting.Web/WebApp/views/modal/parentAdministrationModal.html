@@ -1,0 +1,61 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Admission</h3>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group">
+            <label for="reference">Référence</label>
+            <input type="text" class="form-control" id="reference" ng-model="modal.admission.Reference" />
+        </div>        
+        <div class="form-group">
+            <label for="firstname">Prénom</label>
+            <input type="text" class="form-control" id="firstname" ng-model="modal.admission.Firstname" />
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nom</label>
+            <input type="text" class="form-control" id="lastName" ng-model="modal.admission.LastName" />
+        </div>
+        <div class="form-group">
+            <label for="birthdate">Date de naissance</label>
+            <input type="date" class="form-control" id="birthdate" ng-model="modal.admission.Birthdate" />
+        </div>
+        <!--<div class="form-group">
+            <label for="langue">Date de naissance</label>
+            <select class="form-control" id="langue" ng-model="modal.langue"
+                    ng-options="langue.value as langue.id for langue in modal.langues"></select>
+        </div>-->
+        <div class="form-group">
+            <label for="from">A partir du</label>
+            <input type="date" class="form-control" id="from" ng-model="modal.admission.From" />
+        </div>
+        <div class="form-group">
+            <label for="applicationDate">Date d'application</label>
+            <input type="date" class="form-control" id="applicationDate" ng-model="modal.admission.ApplicationDate" />
+        </div>
+        <!-- /!\ Est-ce qu'il s'agit de la date d'admission de l'enfant ou bien de la date de réception de la demande d'admission ? -->
+        <div class="form-group">
+            <label for="receptionDate">Date de réception</label>
+            <input type="date" class="form-control" id="receptionDate" ng-model="modal.admission.ReceptionDate" />
+        </div>
+        <fieldset>
+            <legend>Remarques</legend>
+            <div class="form-group">
+                <label for="langue">Jours par semaine</label>
+                <select class="form-control" id="nbDays" ng-model="modal.admission.DayPerWeek"
+                        ng-options="day.value as day.id for day in modal.nbDays"></select>
+            </div>
+            <div class="checkbox-inline">                    
+                <input type="checkbox" id="newInCity" ng-model="modal.admission.IsNewInCity" /> Nouveau en ville
+            </div>
+            <div class="checkbox-inline">                    
+                <input type="checkbox" id="outsideCity" ng-model="modal.admission.IsOutsiteCity" /> Hors de la ville
+            </div>
+        </fieldset>
+
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="modal.ok()">OK</button>
+    <button class="btn btn-warning" ng-click="modal.cancel()">Annuler</button>
+</div>
+

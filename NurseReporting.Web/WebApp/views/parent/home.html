@@ -1,0 +1,30 @@
+﻿<div>
+    <div>
+        <ul>
+            <button class="btn btn-default" ng-click="home.action('agenda')"">Agenda</button> 
+            <!--<button class="btn btn-default" ng-click="home.action('absences')">Nouvelle absence</button>--> 
+        </ul>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <td>Enfant</td>
+                <td style="width:10%;"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <!--<tr>
+                <td>Enfant 1</td>
+                <td ng-click="home.action('absences')">action</td>
+            </tr>
+            <tr>
+                <td>Enfant 2</td>
+                <td ng-click="home.action('absences')">action</td>
+            </tr>-->
+            <tr ng-repeat="child in home.children">
+                <td>{{child.FirstName +  ' ' + child.LastName}}</td>
+                <td><button class="btn btn-default" ng-click="home.action('absences', child.Id)">Nouvelle absence</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

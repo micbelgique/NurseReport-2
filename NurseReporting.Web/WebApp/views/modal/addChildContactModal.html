@@ -1,0 +1,33 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Contact</h3>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" id="firstName" ng-model="contactModal.contact.firstName"/>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nom</label>
+            <input type="text" class="form-control" id="lastName" ng-model="contactModal.contact.lastName"/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" ng-model="contactModal.contact.email"/>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="text" class="form-control" id="telephone" ng-model="contactModal.contact.fixedPhone"/>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="text" class="form-control" id="mobile" ng-model="contactModal.contact.mobilePhone"/>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="contactModal.ok()">OK</button>
+    <button class="btn btn-warning" ng-click="contactModal.cancel()">Annuler</button>
+</div>
+
+
